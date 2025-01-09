@@ -1,6 +1,6 @@
 # Portafolio
 
-![logo de mi proyecto][(https://github.com/[images/portafolio imagen.png](https://github.com/MigueMJ/Mi-Portafolio/blob/main/images/portafolio%20imagen.png))](https://github.com/MigueMJ/Mi-Portafolio/blob/main/images/portafolio%20imagen.png) 
+![logo de mi proyecto](https://github.com/MigueMJ/Mi-Portafolio/issues/1#issue-2778611139)
 ---
 
 **Tecnologías utilizadas:**  
