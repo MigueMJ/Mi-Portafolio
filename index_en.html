@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio | Miguel Perez Web Developer">
+        <meta name="robots" content="index,follow">
+        <link rel="shortcut icon" href="images/avIcon.png?78" type="image/x-icon">
+        <title>Portfolio | Miguel Perez</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/home.css?98">
+        <link rel="stylesheet" href="css/sections.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0cf3687c78.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+
+    <header class="header" >
+        <nav class="header_nav">
+            <div class="header_nav_logo"><a href="index.html"><span style="--item:1">M</span><span style="--item:2">I</span><span style="--item:3">G</span><span style="--item:4">U</span><span style="--item:5">E</span><span style="--item:6">L</span></a></div>
+            <button class="header_nav_toggle"><i class="fas fa-bars"></i></button>
+            <div class="header_nav_menu">
+                <a href="#home">Home</a>
+                <a href="#sobreMi">about me</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#habilidades">Skills</a>
+                <a href="#formacion">Training</a>
+                <a href="#proyectos">Projects</a>
+                <a href="#contacto">Contact</a>
+            </div>
+            <div class="dropdown"> 
+                <button class="dropbtn" id="botonIdiomas"><img src="images/banderas/Traduccion1.png" alt="bottom" id="selected-flag"></button> 
+                <div class="dropdown-content" id="listaIdiomas"> 
+                    <a href="#" onclick="changeLanguage('es')"><img src="images/banderas/España-flag.png" alt="Español"></a> 
+                    <a href="#" onclick="changeLanguage('en')"><img src="images/banderas/USA-flag.png" alt="English"></a> 
+                    <a href="#" onclick="changeLanguage('fr')"><img src="images/banderas/Francia-flag.png" alt="Français"></a> 
+                </div> 
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home" data-aos="fade-right" data-aos-duration="1500">
+
+        <div class="home_socialLinks">
+            <div class="container_home_socialLinks">
+                <a href="https://www.linkedin.com/in/miguel-perez-313b2b183/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MigueMJ" target="_blank" ><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.instagram.com/migue_jedi/profilecard/?igsh=MXg3dnprNGducHNmOA==" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="home_info">
+            
+            <div class="container_home_info">
+                <p class="home_text_1">Hello! I am</p>
+                <p class="home_text_2">Miguel Perez</p>
+                <p class="home_text_3">Front-end web developer and graphic designer</p>
+                <p class="home_text_4">Here you will find everything about my work, my projects and my hobbies. I hope you enjoy your visit!</p>
+                <div class="home_info_contaniner_buttoms">
+                    <a href="https://drive.google.com/file/d/1l8Uc5o0THfQRxac2nZE9M_V2Gx0p-ZMS/view?usp=sharing" target="_blank"><button class="cv_button">Download CV</button></a>
+                    <a href="#contacto"><button class="contact_button">Contact</button></a>
+                </div>
+            </div>
+           
+        </div>
+
+        <picture class="home_picture">
+            <img src="./images/perfil.jpg" alt="image perfil" class="home_picture_image">
+        </picture>
+      
+    </section>
+
+    <section class="sobreMi" id="sobreMi">
+        <div class="sobreMi_container">
+            <h1 class="sobreMi_text_1">about me</h1>
+            <div id="descripcion" class="sobreMi_text_3" data-aos="fade-right" data-aos-duration="1000"></div>
+        </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+        <h3 class="hobbies_text_1">Hobbies</h3>
+            <div class="cards_container_hobbies">
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <div>
+                        <a class="hobbies__img"><img src="images/Hobbies/Deportes-logo.png" alt="deportes"></a>
+                        <a class="hobbies__name">Sports</a>
+                    </div>
+                    <ul id="deportes" class="dropdown-content"></ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/Gamer-logo1.png" alt="gamer"></a>
+                        <a class="hobbies__name">Gamer</a>
+                        <ul id="gamer" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/Contenido1.png" alt="crearcontenido"></a>
+                        <a class="hobbies__name">Create content</a>
+                        <ul id="crearcontenido" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/LeerC.png" alt="leer"></a>
+                        <a class="hobbies__name">Read</a>
+                        <ul id="leer" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/Idiomas.png" alt="idiomas"></a>
+                        <a class="hobbies__name">Languages</a>
+                        <ul id="idiomas" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/Cocina1.png" alt="cocinar"></a>
+                        <a class="hobbies__name">Cook</a>
+                        <ul id="cocinar" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/Viajes-logo.png" alt="Viajar"></a>
+                        <a class="hobbies__name">Travel</a>
+                        <ul id="Viajar" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/Musica2.png" alt="musica"></a>
+                        <a class="hobbies__name">Music</a>
+                        <ul id="musica" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                    <ul>
+                        <a class="hobbies__img"> <img src="images/Hobbies/Tvseries.png" alt="cineserie"></a>
+                        <a class="hobbies__name">Cinema and series</a>
+                        <ul id="cineserie" class="dropdown-content"></ul>
+                    </ul>
+                </div>
+                
+                
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h1 class="habilidades_text_1">Skills</h1>
+        <div class="cards_container_habilidades">
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-html.png" alt="Icono de HTML">
+                <p>HTML 5</p>
+            </div>
+            
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-css.png" alt="Icono de CSS">
+                <p>CSS 3</p>
+            </div>
+
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-js.png" alt="Icono de JavaScript">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-react.png" alt="Icono de JavaScript">
+                <p>React</p>
+            </div>
+
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-python.png" alt="Icono de Java">
+                <p>Python</p>
+            </div>
+
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-java.png" alt="Icono de Tailwind">
+                <p>Java</p>
+            </div>
+
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-git.png" alt="Icono de Git">
+                <p>Git</p>
+            </div>
+            
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-github.png" alt="Icono de GitHub">
+                <p>Github</p>
+            </div>
+
+            <div class="cards_habilidades" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./images/icon-php.png" alt="Icono de Trello">
+                <p>PHP</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formacion" id="formacion">
+        <h1 class="formacion_text_1">Training</h1>
+
+        <div class="cards_container_formacion">
+            <div class="cards_formacion" data-aos="fade-down" data-aos-duration="1000">
+                <img class="logo-ucr" src="./images/logo-ucr.png" alt="Logo - UE Colegio San Agustin">
+                <div class="container_texto--formacion">
+                    <p>Bachelor of science</p>
+                    <p>2009 - 2014</p>
+                </div>
+            </div>
+
+            <div class="cards_formacion" data-aos="fade-up" data-aos-duration="1000">
+                <img class="logo-one" src="./images/logo-one.png" alt="Logo - ONE">
+                <div class="container_texto--formacion">
+                    <p>Front-end Web Development</p>
+                    <p>2022 - 2023</p>
+                </div>
+            </div>
+
+            <div class="cards_formacion" data-aos="fade-down"  data-aos-duration="1000">
+                <img class="logo-CCV" src="./images/Logo_Centro_Contable_2.png" alt="Logo - Centro Contable venezolano">
+                <div class="container_texto_formacion">
+                    <p>Accounting assistant</p>
+                    <p>2009 - 2014</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <h1 class="proyectos_text_1">Projects</h1>
+
+        <div class="cards_container_proyectos">
+
+            <div class="cards_proyectos" data-aos="zoom-in-up" data-aos-duration="1000">
+                
+                <div class="container_imgCard_proyectos">
+                    <img src="./images/image-encriptador.jpg" alt="Proyecto: Juego del ahorcado">
+                </div>
+
+                <div class="container_textCard_proyectos">
+                    <h2>Text Encryptor</h2>
+                    <p>An encryptor where the user can write a text and the encryptor encrypts it with already programmed keys. The encryptor also allows you to decrypt the text.</p>
+                </div>
+
+                <div class="container_btn_proyectos">
+                    <a href="https://miguemj.github.io/Encriptador/" target="_blank">
+                        <button class="btn_proyectos demo"><i class="fa-solid fa-eye"></i> Demo</button>
+                    </a>
+                    <a href="https://github.com/MigueMJ/Encriptador" target="_blank">
+                        <button class="btn_proyectos repo"><i class="fa-brands fa-github"></i> Repo</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cards_proyectos" data-aos="zoom-in-up" data-aos-duration="1000">
+                
+                <div class="container_imgCard_proyectos">
+                    <img src="./images/personasyequipos.png" alt="Proyecto: Personas y equipos">
+                </div>
+
+                <div class="container_textCard_proyectos">
+                    <h2>People and Team Organizer</h2>
+                    <p>Organize people and teams in one place. Project carried out in order to put into practice my knowledge in the use of React</p>
+                </div>
+
+                <div class="container_btn_proyectos">
+                    <a href="https://org-miguemj.vercel.app/" target="_blank">
+                        <button class="btn_proyectos demo"><i class="fa-solid fa-eye"></i> Demo</button>
+                    </a>
+                    <a href="https://github.com/MigueMJ/Org" target="_blank">
+                        <button class="btn_proyectos repo"><i class="fa-brands fa-github"></i> Repo</button>
+                    </a>
+                </div>
+        </div>
+
+        </div> 
+
+    </section>
+
+
+    <section class="contacto" id="contacto">
+        <h1 class="contacto_text_1">Contact</h1>
+        <form class="form_contact" action="https://formsubmit.co/c5b01a88dcbd3c478c952b2530c294f6" method="POST">
+            <p>Complete the form and I will contact you as soon as possible.</p>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="asunto" placeholder="Subject" required>
+            <textarea cols="20" rows="4" name="message" placeholder="Message" required></textarea>
+        
+            <div class="btn_form_contacto">
+                <button type="submit">Send</button>
+            </div>
+
+            <!-- options of API formsubmit -->
+            <input type="hidden" name="_next" value="https://alejandrovc6467.github.io/Portafolio/#contacto">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+        
+    </section>
+
+
+    <footer id="footer">
+        <div class="footer_derechos">
+            <p>2024 © All rights reserved </p>
+        </div>
+        <div class="footer_redes">
+              <a href="https://www.linkedin.com/in/miguel-perez-313b2b183/" target="_blank" ><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="https://github.com/MigueMJ" target="_blank" ><i class="fa-brands fa-square-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/migue_jedi/profilecard/?igsh=MXg3dnprNGducHNmOA==" target="_blank" ><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+        </div>
+        <div class="footer_disigned">
+            <p>Designed by <span class="nameDesigned">Miguel Perez</span> </p>
+        </div>
+    </footer>
+
+    <button id="btnSubir" class="btn-subir" onclick="subirInicio()"> 
+        <img src="images/154707.png" alt="Subir" class="btn-subir-img"> 
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="scripts/script.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', () => loadContent('en'))</script>
+        
+</body>
+
+</html>

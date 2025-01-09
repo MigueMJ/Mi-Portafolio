@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}    
+
+:root {
+    --whiteColor-text:  rgba(240, 248, 255, 0.863);
+}
+
+/*MODiFICACIONES AL SCROLL BAR ORIGINAL*/
+html::-webkit-scrollbar {
+    width: 4px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(4, 4, 4);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color:#0059a67b;
+    border-radius: 5px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/fondo.jpg) ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.btn-subir {
+    position: fixed; 
+	bottom: 20px; 
+	right: 20px; 
+	display: none; 
+	background-color: #332f2c; /* Color gris claro semitransparente */ 
+	border: none; 
+	padding: 10px; 
+	border-radius: 50%; /* Hace el botón redondo */ 
+	cursor: pointer; 
+	width: 50px; 
+	height: 50px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	
+}
+
+.btn-subir:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.btn-subir-img { 
+	width: 30px; 
+	height: 30px;
+	
+}
